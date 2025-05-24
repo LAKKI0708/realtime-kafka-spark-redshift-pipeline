@@ -14,7 +14,6 @@ graph TD
     D --> E[Glue Crawler]
     E --> F[Redshift Table]
 
-
 ## 🛠️ Technologies Used
 
 - **Apache Kafka**
