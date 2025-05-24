@@ -13,3 +13,48 @@ graph TD
     C --> D[S3 Bucket]
     D --> E[Glue Crawler]
     E --> F[Redshift Table]
+---
+
+## 🛠️ Technologies Used
+
+- **Apache Kafka**
+- **Apache Spark Structured Streaming**
+- **Docker Compose**
+- **AWS S3**
+- **AWS Redshift**
+- **AWS Glue**
+- **Python**
+- **PySpark**
+- **Confluent Kafka Broker**
+
+---
+## 📌 Use Case
+
+This project simulates a smart city scenario where various data streams (vehicle telemetry, GPS coordinates, weather data, and traffic conditions) are produced in real-time, processed, and stored for analytical queries.
+
+---
+
+## 📦 Features
+
+- Python-based data generator to simulate smart city telemetry.
+- Kafka broker (with Zookeeper) to handle event ingestion.
+- Spark Structured Streaming to process data from Kafka and write to S3 in Parquet format.
+- AWS Glue crawlers to crawl S3 data and load into Redshift.
+- Modular and containerized setup using Docker Compose.
+
+---
+
+## 🧾 Kafka Topics
+
+- `vehicle_data`
+- `gps_data`
+- `traffic_data`
+- `weather_data`
+
+---
+## ⚙️ Streaming Pipeline
+
+```text
++-------------+      +--------+      +--------+      +-----+      +----------+
+| Data Source | -->  | Kafka  | -->  | Spark  | -->  | S3  | -->  | Redshift |
++-------------+      +--------+      +--------+      +-----+      +----------+
