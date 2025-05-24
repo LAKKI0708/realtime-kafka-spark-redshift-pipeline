@@ -60,4 +60,13 @@ This project simulates a smart city scenario where various data streams (vehicle
 | Data Source | -->  | Kafka  | -->  | Spark  | -->  | S3  | -->  | Redshift |
 +-------------+      +--------+      +--------+      +-----+      +----------+
 
+---
+## 🔐 Prerequisites
 
+- Docker & Docker Compose
+- Python 3.8+
+- AWS Account with:
+  - S3 Bucket
+  - Glue Crawler + Database
+  - Redshift Cluster & IAM role with S3 access
+- IAM roles/permissions for writing to S3 and reading into Redshift
