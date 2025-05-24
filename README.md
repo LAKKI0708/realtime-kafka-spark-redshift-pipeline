@@ -13,7 +13,7 @@ graph TD
     C --> D[S3 Bucket]
     D --> E[Glue Crawler]
     E --> F[Redshift Table]
----
+
 
 ## 🛠️ Technologies Used
 
