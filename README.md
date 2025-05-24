@@ -1,10 +1,10 @@
-# 🧠 Real-Time Data Pipeline with Kafka, Spark & Redshift
+#  Real-Time Data Pipeline with Kafka, Spark & Redshift
 
 This project demonstrates a full-fledged real-time data processing pipeline using Apache Kafka, Apache Spark, and AWS Redshift. Data is simulated using a Python script and sent to Kafka. Spark reads from Kafka, transforms the data, and finally writes the processed results to an S3 bucket, which is later crawled and ingested into Redshift.
 
 ---
 
-## 📌 Project Architecture
+##  Project Architecture
 
 ```mermaid
 graph TD
@@ -16,7 +16,7 @@ graph TD
 ```
 ---
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **Apache Kafka**
 - **Apache Spark Structured Streaming**
@@ -29,13 +29,13 @@ graph TD
 - **Confluent Kafka Broker**
 
 ---
-## 📌 Use Case
+##  Use Case
 
 This project simulates a smart city scenario where various data streams (vehicle telemetry, GPS coordinates, weather data, and traffic conditions) are produced in real-time, processed, and stored for analytical queries.
 
 ---
 
-## 📦 Features
+##  Features
 
 - Python-based data generator to simulate smart city telemetry.
 - Kafka broker (with Zookeeper) to handle event ingestion.
@@ -45,7 +45,7 @@ This project simulates a smart city scenario where various data streams (vehicle
 
 ---
 
-## 🧾 Kafka Topics
+##  Kafka Topics
 
 - `vehicle_data`
 - `gps_data`
@@ -53,15 +53,15 @@ This project simulates a smart city scenario where various data streams (vehicle
 - `weather_data`
 
 ---
-## ⚙️ Streaming Pipeline
+##  Streaming Pipeline
 
 ```text
 +-------------+      +--------+      +--------+      +-----+      +----------+
 | Data Source | -->  | Kafka  | -->  | Spark  | -->  | S3  | -->  | Redshift |
 +-------------+      +--------+      +--------+      +-----+      +----------+
-
+```
 ---
-## 🔐 Prerequisites
+##  Prerequisites
 
 - Docker & Docker Compose
 - Python 3.8+
