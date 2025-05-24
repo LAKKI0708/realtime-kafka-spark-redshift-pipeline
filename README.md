@@ -13,6 +13,8 @@ graph TD
     C --> D[S3 Bucket]
     D --> E[Glue Crawler]
     E --> F[Redshift Table]
+```
+---
 
 ## 🛠️ Technologies Used
 
@@ -57,3 +59,5 @@ This project simulates a smart city scenario where various data streams (vehicle
 +-------------+      +--------+      +--------+      +-----+      +----------+
 | Data Source | -->  | Kafka  | -->  | Spark  | -->  | S3  | -->  | Redshift |
 +-------------+      +--------+      +--------+      +-----+      +----------+
+
+
