@@ -103,9 +103,7 @@ def main():
     query4 = streamWriter(weatherDF, 's3a://kafka-spark-streaming-data/checkpoints/weather_data',
                  's3a://kafka-spark-streaming-data/data/weather_data')
 
-    query1.awaitTermination()
-    query2.awaitTermination()
-    query3.awaitTermination()
+
     query4.awaitTermination()
 
 
